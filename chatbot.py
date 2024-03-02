@@ -22,7 +22,7 @@ def main():
 	#config = configparser.ConfigParser()
 	#config.read('config.ini')
 	#updater = Updater(token = (config['TELEGRAM']['ACCESS_TOKEN']), use_context = True)
-    updater = Updater(token = (os.environ['TELEGRAM_ACCESS_TOKEN']), use_context = True)
+    	updater = Updater(token = (os.environ['TELEGRAM_ACCESS_TOKEN']), use_context = True)
 	dispatcher = updater.dispatcher
 	global redis1
 	redis1 = redis.Redis(host=(os.environ['REDIS_HOST']), password=(os.environ['REDIS_PASSWORD']), port=(os.environ['REDIS_REDISPORT']))
